@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kerry Green Bookkeeping | Bookkeeper in Bognor Regis, West Sussex</title>
+<meta name="description" content="Straightforward, accurate bookkeeping for small businesses and sole traders in Bognor Regis and West Sussex. Monthly bookkeeping, VAT returns, payroll and year-end accounts.">
+<link rel="canonical" href="https://www.kerrykeepsbooks.co.uk/">
+
+<!-- Open Graph / social sharing -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Kerry Green Bookkeeping | Bookkeeper in Bognor Regis, West Sussex">
+<meta property="og:description" content="Straightforward, accurate bookkeeping for small businesses and sole traders. Monthly bookkeeping, VAT returns, payroll and year-end accounts.">
+<meta property="og:url" content="https://www.kerrykeepsbooks.co.uk/">
+<meta property="og:image" content="https://www.kerrykeepsbooks.co.uk/og-image.png">
+<meta property="og:locale" content="en_GB">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Kerry Green Bookkeeping | Bookkeeper in Bognor Regis">
+<meta name="twitter:description" content="Straightforward, accurate bookkeeping for small businesses and sole traders in Bognor Regis and West Sussex.">
+<meta name="twitter:image" content="https://www.kerrykeepsbooks.co.uk/og-image.png">
+
+<!-- Local business structured data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "AccountingService",
+  "name": "Kerry Green Bookkeeping",
+  "image": "https://www.kerrykeepsbooks.co.uk/og-image.png",
+  "url": "https://www.kerrykeepsbooks.co.uk/",
+  "telephone": "+447771531304",
+  "email": "hello@kerrykeepsbooks.co.uk",
+  "priceRange": "£",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Bognor Regis",
+    "addressRegion": "West Sussex",
+    "addressCountry": "GB"
+  },
+  "areaServed": {
+    "@type": "State",
+    "name": "West Sussex"
+  },
+  "founder": {
+    "@type": "Person",
+    "name": "Kerry Green"
+  },
+  "sameAs": []
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=IBM+Plex+Sans:wght@400;500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --cream: #F3EEE6;
+    --cream-2: #EAE2D4;
+    --sage: #9AA089;
+    --sage-deep: #5B5F49;
+    --ink: #2E2B26;
+    --ink-soft: #726C61;
+    --gold: #B08968;
+    --line: rgba(46,43,38,0.14);
+    --blush: #D9C4B8;
+  }
+
+  *{ margin:0; padding:0; box-sizing:border-box; }
+
+  html{ scroll-behavior:smooth; }
+
+  body{
+    background: var(--cream);
+    color: var(--ink);
+    font-family:'IBM Plex Sans', sans-serif;
+    overflow-x:hidden;
+  }
+
+  @media (prefers-reduced-motion: reduce){
+    *{ animation-duration:0.01ms !important; animation-iteration-count:1 !important; transition-duration:0.01ms !important; scroll-behavior:auto !important; }
+  }
+
+  /* ---- Nav ---- */
+  nav{
+    position:fixed; top:0; left:0; right:0; z-index:100;
+    display:flex; align-items:center; justify-content:space-between;
+    padding: 1.6rem 3rem;
+    mix-blend-mode: normal;
+  }
+  .brand{
+    font-family:'Fraunces', serif;
+    font-weight:500;
+    font-size:1.15rem;
+    letter-spacing:0.01em;
+    color: var(--ink);
+  }
+  .brand span{ color: var(--sage-deep); font-style:italic; }
+
+  .nav-links{
+    display:flex; gap:2.2rem;
+    list-style:none;
+  }
+  .nav-links a{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:0.72rem;
+    letter-spacing:0.08em;
+    text-transform:uppercase;
+    color: var(--ink-soft);
+    text-decoration:none;
+    transition: color 0.25s ease;
+  }
+  .nav-links a:hover, .nav-links a:focus-visible{ color: var(--sage-deep); }
+
+  @media (max-width: 720px){
+    .nav-links{ display:none; }
+    nav{ padding: 1.4rem 1.5rem; }
+  }
+
+  /* ---- Page sections ---- */
+  .page{
+    min-height:100vh;
+    position:relative;
+    display:flex;
+    align-items:center;
+    padding: 7rem 3rem 5rem;
+    border-bottom: 1px solid var(--line);
+    opacity:0;
+    transform: translateY(48px);
+    transition: opacity 0.9s cubic-bezier(.22,.61,.36,1), transform 0.9s cubic-bezier(.22,.61,.36,1);
+  }
+  .page.in-view{ opacity:1; transform:translateY(0); }
+
+  .page-inner{
+    max-width: 980px;
+    margin: 0 auto;
+    width:100%;
+    position:relative;
+  }
+
+  .page-number{
+    position:absolute;
+    top: 2.2rem;
+    right: 3rem;
+    font-family:'IBM Plex Mono', monospace;
+    font-size:0.72rem;
+    color: var(--ink-soft);
+    letter-spacing:0.08em;
+  }
+  @media (max-width: 720px){ .page-number{ right:1.5rem; } }
+
+  /* ---- Image / content split layout ---- */
+  .split{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "heading media"
+      "body media";
+    column-gap: 4.5rem;
+    row-gap: 0.6rem;
+    align-items:center;
+  }
+  .split.flip{
+    grid-template-areas:
+      "media heading"
+      "media body";
+  }
+  .split-heading{ grid-area:heading; align-self:end; }
+  .split-body{ grid-area:body; align-self:start; }
+  .split-media{ grid-area:media; }
+
+  @media (max-width: 860px){
+    .split{
+      grid-template-columns: 1fr 130px;
+      grid-template-areas:
+        "heading media"
+        "body body";
+      column-gap: 1.2rem;
+      row-gap: 1.2rem;
+      align-items:start;
+    }
+    .split.flip{
+      grid-template-columns: 130px 1fr;
+      grid-template-areas:
+        "media heading"
+        "body body";
+    }
+    .split-heading{ align-self:center; }
+    .split-media{
+      aspect-ratio: 1/1 !important;
+      width:100%;
+    }
+    .split-media .media-caption{ display:none; }
+  }
+
+  .split-media{
+    aspect-ratio: 4/5;
+    border-radius: 2px;
+    overflow:hidden;
+    position:relative;
+    background: linear-gradient(155deg, var(--blush) 0%, var(--sage) 100%);
+  }
+  .split-media img{
+    width:100%; height:100%;
+    object-fit:cover;
+    display:block;
+    filter: saturate(0.86) contrast(0.97);
+  }
+  .split-media .media-caption{
+    position:absolute; bottom:1.2rem; left:1.2rem;
+    font-family:'IBM Plex Mono', monospace;
+    font-size:0.66rem;
+    letter-spacing:0.08em;
+    text-transform:uppercase;
+    color: var(--cream);
+    background: rgba(46,43,38,0.35);
+    padding: 0.3rem 0.6rem;
+    backdrop-filter: blur(2px);
+  }
+
+  .ledger-line{
+    height:1px;
+    background: var(--line);
+    width:100%;
+    margin: 1.6rem 0;
+  }
+
+  .eyebrow{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:0.72rem;
+    letter-spacing:0.14em;
+    text-transform:uppercase;
+    color: var(--sage-deep);
+    margin-bottom:1.1rem;
+    display:flex;
+    align-items:center;
+    gap:0.6rem;
+  }
+  .eyebrow::before{
+    content:'';
+    width:1.6rem; height:1px;
+    background: var(--sage-deep);
+    display:inline-block;
+  }
+
+  h1, h2{
+    font-family:'Fraunces', serif;
+    font-weight:500;
+    line-height:1.05;
+    letter-spacing:-0.01em;
+    color: var(--ink);
+  }
+
+  /* ---- HOME ---- */
+  #home{ background: var(--cream); }
+  #home h1{
+    font-size: clamp(1.6rem, 6vw, 5rem);
+    max-width: 15ch;
+  }
+  #home h1 em{
+    font-style:italic;
+    color: var(--sage-deep);
+    font-weight:400;
+  }
+  #home .lede{
+    margin-top:1.6rem;
+    max-width:42ch;
+    font-size:1.05rem;
+    color: var(--ink-soft);
+    line-height:1.65;
+  }
+  .cta-row{
+    margin-top:2.4rem;
+    display:flex;
+    align-items:center;
+    gap:1.6rem;
+  }
+  .btn{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:0.78rem;
+    letter-spacing:0.06em;
+    text-transform:uppercase;
+    color: var(--cream);
+    background: var(--sage-deep);
+    padding: 0.95rem 1.8rem;
+    border-radius: 2px;
+    text-decoration:none;
+    transition: background 0.25s ease, transform 0.25s ease;
+    display:inline-block;
+  }
+  .btn:hover, .btn:focus-visible{ background: var(--ink); transform: translateY(-2px); }
+  .btn-ghost{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:0.78rem;
+    letter-spacing:0.06em;
+    text-transform:uppercase;
+    color: var(--ink-soft);
+    text-decoration:none;
+    border-bottom:1px solid var(--line);
+    padding-bottom:2px;
+  }
+  .btn-ghost:hover, .btn-ghost:focus-visible{ color:var(--ink); border-color:var(--ink); }
+
+  .stamp{
+    position:absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%) rotate(-6deg);
+    width: 128px; height:128px;
+    border: 1.5px solid var(--gold);
+    border-radius:50%;
+    display:flex; align-items:center; justify-content:center;
+    text-align:center;
+    color: var(--gold);
+    font-family:'IBM Plex Mono', monospace;
+    font-size:0.62rem;
+    letter-spacing:0.1em;
+    text-transform:uppercase;
+    line-height:1.5;
+    opacity:0.75;
+  }
+  @media (max-width: 900px){ .stamp{ display:none; } }
+
+  /* ---- SERVICES ---- */
+  #services{ background: var(--cream-2); }
+  #services h2{ font-size: clamp(1.6rem, 4vw, 3rem); margin-bottom:2.6rem; }
+
+  .ledger-table{ width:100%; }
+  .ledger-row{
+    display:grid;
+    grid-template-columns: 3.5rem 1fr auto;
+    gap: 1.5rem;
+    align-items:baseline;
+    padding: 1.5rem 0;
+    border-top: 1px solid var(--line);
+  }
+  .ledger-row:last-child{ border-bottom: 1px solid var(--line); }
+  .ledger-idx{
+    font-family:'IBM Plex Mono', monospace;
+    color: var(--sage-deep);
+    font-size:0.85rem;
+  }
+  .ledger-name{
+    font-family:'Fraunces', serif;
+    font-size:1.35rem;
+    font-weight:500;
+  }
+  .ledger-desc{
+    grid-column: 2 / 3;
+    color: var(--ink-soft);
+    font-size:0.95rem;
+    margin-top:0.4rem;
+    max-width:48ch;
+    line-height:1.6;
+  }
+  .ledger-tag{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:0.72rem;
+    color: var(--ink-soft);
+    letter-spacing:0.05em;
+    white-space:nowrap;
+    align-self:start;
+  }
+  @media (max-width:640px){
+    .ledger-row{ grid-template-columns: 2.4rem 1fr; }
+    .ledger-tag{ grid-column: 2/3; margin-top:0.5rem; }
+  }
+
+  /* ---- ABOUT ---- */
+  #about{ background: var(--cream); }
+
+  #about h2{ font-size: clamp(1.6rem, 3.6vw, 2.7rem); margin-bottom:1.4rem; }
+  #about p{ color: var(--ink-soft); line-height:1.75; font-size:1rem; margin-bottom:1.1rem; }
+  .credentials{
+    margin-top:1.8rem;
+    display:flex;
+    flex-direction:column;
+    gap:0.6rem;
+  }
+  .credentials div{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:0.78rem;
+    color: var(--sage-deep);
+    display:flex;
+    gap:0.8rem;
+  }
+  .credentials div::before{ content:'—'; color: var(--gold); }
+
+  /* ---- CONTACT ---- */
+  #contact{ background: var(--sage-deep); color: var(--cream); border-bottom:none; }
+  #contact .eyebrow{ color: var(--gold); }
+  #contact .eyebrow::before{ background: var(--gold); }
+  #contact h2{
+    color: var(--cream);
+    font-size: clamp(1.6rem, 5vw, 4rem);
+    max-width: 16ch;
+  }
+  #contact .lede{
+    color: rgba(244,240,228,0.72);
+    max-width:42ch;
+    margin-top:1.4rem;
+    line-height:1.65;
+    font-size:1.02rem;
+  }
+
+  .contact-details{
+    margin-top:2.6rem;
+    display:flex;
+    flex-wrap:wrap;
+    gap: 3rem;
+  }
+  .contact-item .label{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:0.68rem;
+    letter-spacing:0.1em;
+    text-transform:uppercase;
+    color: rgba(244,240,228,0.55);
+    margin-bottom:0.5rem;
+  }
+  .contact-item a, .contact-item span{
+    font-family:'Fraunces', serif;
+    font-size:1.2rem;
+    color: var(--cream);
+    text-decoration:none;
+    border-bottom: 1px solid rgba(244,240,228,0.3);
+    padding-bottom:2px;
+  }
+  .contact-item a:hover, .contact-item a:focus-visible{ border-color: var(--gold); color: var(--gold); }
+  footer{
+    background: var(--sage-deep);
+
+    color: rgba(244,240,228,0.5);
+    text-align:center;
+    padding: 1.6rem 1rem 2.2rem;
+    font-family:'IBM Plex Mono', monospace;
+    font-size:0.68rem;
+    letter-spacing:0.06em;
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="brand">Kerry Green <span>Bookkeeping</span></div>
+  <ul class="nav-links">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<section id="home" class="page">
+  <div class="page-number"></div>
+  <div class="page-inner">
+    <div class="split">
+      <div class="split-media">
+        <div class="media-caption">Café counter, handing over</div>
+        <img src="/images/cafe.jpg" alt="A boutique cafe, handing over freshly made coffee to a customer">
+
+      </div>
+      <div class="split-heading">
+        <div class="eyebrow">Friendly, reliable, local.</div>
+        <h1>Bookkeeping for small businesses</h1>
+      </div>
+      <div class="split-body">
+        <p class="lede">Bookkeeping services and support that helps you free up time to focus on doing the work you love.</p>
+        <div class="cta-row">
+          <a href="#contact" class="btn">Get in touch</a>
+          <a href="#services" class="btn-ghost">See services</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="services" class="page">
+  <div class="page-number">Page 02 — Services</div>
+  <div class="page-inner">
+    <div class="split flip">
+      <div class="split-media">
+      <div class="media-caption">Local gardener, arranging plants</div>
+        <img src="/images/gardener.jpg" alt="A small business owner at work, preparing garden plants">
+      </div>
+      <div class="split-heading">
+        <div class="eyebrow">How I can help</div>
+        <h2>Services that help you focus on what you do best</h2>
+      </div>
+      <div class="split-body">
+        <div class="ledger-table">
+          <div class="ledger-row">
+            <div class="ledger-idx">01</div>
+            <div>
+              <div class="ledger-name">Monthly bookkeeping</div>
+              <div class="ledger-desc">Invoice and bill tracking, reconciliations, reports and support.</div>
+            </div>
+            <div class="ledger-tag"></div>
+          </div>
+          <div class="ledger-row">
+            <div class="ledger-idx">02</div>
+            <div>
+              <div class="ledger-name">VAT returns</div>
+              <div class="ledger-desc">Prepared and filed on time.</div>
+            </div>
+            <div class="ledger-tag"></div>
+          </div>
+          <div class="ledger-row">
+            <div class="ledger-idx">03</div>
+            <div>
+              <div class="ledger-name">MTD</div>
+              <div class="ledger-desc">Quarterly submissions prepared and filed.</div>
+            </div>
+            <div class="ledger-tag"></div>
+          </div>
+          <div class="ledger-row">
+            <div class="ledger-idx">04</div>
+            <div>
+              <div class="ledger-name">Payroll</div>
+              <div class="ledger-desc">Prepared and submitted on time, queries answered.</div>
+            </div>
+            <div class="ledger-tag"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="page">
+  <div class="page-number">Page 03 — About</div>
+  <div class="page-inner">
+    <div class="split">
+      <div class="split-media">
+        <div class="media-caption">Hairdresser, small studio</div>
+        <img src="/images/hairdresser.jpg" alt="A small business owner at work, cutting hair in a studio">
+      </div>
+      <div class="split-heading">
+        <div class="eyebrow">About</div>
+        <h2>Balancing the books with no fuss</h2>
+      </div>
+      <div class="split-body">
+        <p>I’m a qualified, licensed AAT bookkeeper with experience working in a chartered accountancy practice, as well as first-hand experience of running my own small businesses. So I understand bookkeeping from both sides — the importance of getting the numbers right, but also the reality of running a busy small business where there never seem to be enough hours in the day.</p>
+        <p>I only work with local businesses in Chichester and surrounding areas, so it’s easy to meet in person if there’s anything you want to discuss face to face.  </p>
+        <div class="credentials">
+          <div>Licensed AAT bookkeeper</div>
+          <div>AML supervised &amp; fully insured</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="page">
+  <div class="page-number" style="color:rgba(244,240,228,0.55);">Page 04 — Contact</div>
+  <div class="page-inner">
+    <div class="split flip">
+      <div class="split-media" style="background: linear-gradient(155deg, var(--gold) 0%, var(--sage-deep) 120%); opacity:0.9;">
+        <div class="media-caption">Independent architect, at work</div>
+        <img src="/images/designer.jpg" alt="Independent architect, at work">
+      </div>
+      <div class="split-heading">
+        <div class="eyebrow">Get in touch</div>
+        <h2>Let's tidy up your books.</h2>
+      </div>
+      <div class="split-body">
+        <p class="lede">Send a note with a little about your business, and I'll reply within one working day to arrange a short call.</p>
+        <div class="contact-details">
+          <div class="contact-item">
+            <div class="label">Email</div>
+            <a href="mailto:hello@kerrykeepsbooks.co.uk">hello@kerrykeepsbooks.co.uk</a>
+          </div>
+          <div class="contact-item">
+            <div class="label">Phone</div>
+            <a href="tel:+447771531304">07771 531 304</a>
+          </div>
+          <div class="contact-item">
+            <div class="label">Based in</div>
+            <span>Bognor Regis, UK</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  © 2026 Kerry Keep Books. All figures handled with care.
+</footer>
+
+<script>
+  const pages = document.querySelectorAll('.page');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if(entry.isIntersecting){
+        entry.target.classList.add('in-view');
+      }
+    });
+  }, { threshold: 0.18 });
+  pages.forEach(p => observer.observe(p));
+</script>
+
+</body>
+</html>
